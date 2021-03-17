@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+   background: #010202; 
+   font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    max-width: 1146px;
+    margin: auto;
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: block;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user-photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-name{
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 15px;
+}
+.film{
+    background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
+     url(../img/cover-image.jpg) no-repeat right top;
+     min-height: 100vh;
+     color: #fff;
+}
