@@ -40,8 +40,7 @@ a{
     margin-right: 15px;
 }
 .app{
-    background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
-     url(../img/cover-image.jpg) no-repeat right top;
+    background: linear-gradient(90deg, #010202 0%,#010202 45%, rgba(1, 2, 2, 0.2) 90%);
      min-height: 100vh;
      color: #fff;
 }
@@ -55,11 +54,13 @@ a{
     display: flex;
     color: #e5e5e5;
     opacity: 40%;
+    flex-wrap: wrap;
 }
 .tags > *{
     font-size: 16px;
     line-height: 140%;
     margin-right: 15px; 
+    margin-bottom: 10px;
 }
 .age{
     border: 1px solid #fff;
@@ -74,10 +75,9 @@ a{
 }
 .button{
     box-sizing: content-box;
-    width: 183px;
     height: 44px; 
     padding: 11px 25px;
-    background-repeat: 6px;
+    border-radius: 6px;
     border: none;
     font-size: 16px;
     line-height: 140%;
@@ -93,4 +93,46 @@ a{
 }
 .button-text{
    margin-left: 10px; 
+}
+@media (max-width: 768px){
+    .app{
+        height: auto;
+        padding-bottom: 400px;
+        background: url('../img/cover-image.jpg') no-repeat bottom center / 300px;
+    }
+    video{
+        display: none;
+    }
+    .film{
+        padding-top: 2%;
+    }
+    .description{
+        font-size: 16px;
+        min-width: 330px;
+    }
+    .film-logo{
+        min-width: 100%;
+    }
+    .tags{
+        max-width: 100%;
+    }
+    .user-name{
+        display: none;
+    }
+}
+@media (max-width: 576px){
+    .button-text{
+        display: none;
+    }
+    .user-name{
+        display: none;
+    }
+    .app{
+        height: auto;
+        padding-bottom: 350px;
+        background-size: 300px;
+    }
+    .button{
+      margin-bottom: 10px;  
+    }
 }
