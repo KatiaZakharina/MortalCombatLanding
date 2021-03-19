@@ -37,13 +37,26 @@
                 Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший
             </p>
             <div class="button-group">
-                <button class="button button-primary">Предзаказ фильма</button>
-                <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button-defolt">
+                <a data-fancybox data-src="#hidden-content" class="button button-primary" href="javascript:;">Предзаказ фильма</a>
+                <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button-defolt" href="javascript:;">
                     <img src="img/Vector.svg" alt="icon: play" class="button-icon">
                     <span class="button-text">Смотреть трейлер</span>
                 </a>
             </div>
             <!-- /.button-group -->
+            <div class="modal" id="hidden-content">
+                <div class="modal__dialog">
+                    <div class="modal__content">
+                        <form action="#">
+                            <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                            <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                            <input required placeholder="Ваша электронная почта" name="phone" type="phone" class="modal__input">
+                            <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </div>
     <script
