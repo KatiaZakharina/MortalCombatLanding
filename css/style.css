@@ -2,22 +2,22 @@
     box-sizing: border-box;
 }
 body{
-    background: #010202; 
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: normal;
+    background: #010202; 
 }
 a{
     text-decoration: none;
 }
 .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
     max-width: 1146px;
     margin: auto;
     padding: 56px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .logo{
     display: block;
@@ -52,9 +52,9 @@ a{
 }
 .tags{
     display: flex;
+    flex-wrap: wrap;
     color: #e5e5e5;
     opacity: 40%;
-    flex-wrap: wrap;
 }
 .tags > *{
     font-size: 16px;
@@ -74,6 +74,7 @@ a{
     margin-bottom: 36px;
 }
 .button{
+    display: inline-flex;
     box-sizing: content-box;
     height: 44px; 
     padding: 11px 25px;
@@ -83,7 +84,6 @@ a{
     line-height: 140%;
     background-color: #2f2f2f;
     color: #fff;
-    display: inline-flex;
     align-items: center;
     cursor: pointer;
 }
@@ -124,15 +124,15 @@ a{
 }
 .modal__input {
     display: block;
-    margin: 20px auto 20px auto;
     width: 280px;
     height: 50px;
+    margin: 20px auto 20px auto;
+    padding: 0 20px;
     background: #fff;
     box-shadow: 0 4px 15px rgba(0,0,0,.2);
     border: none;
     font-size: 18px;
     text-align: center;
-    padding: 0 20px;
     outline: 0;
 }
 .modal .btn {
